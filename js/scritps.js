@@ -40,8 +40,8 @@ function calcularGorjeta(e){
             break;
     }
 
-    gorjeta.value = `R$ ${resultTotal.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}`;
-    valorTotal.value = `R$ ${(resultTotal + valorValue).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}`;
+    gorjeta.value = resultTotal.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+    valorTotal.value = (resultTotal + valorValue).toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 }
 
 
